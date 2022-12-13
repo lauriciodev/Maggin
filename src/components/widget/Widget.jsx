@@ -25,7 +25,7 @@ const Widget = ({ type }) => {
       break;
     case "order":
       data = {
-        title: "Pedidos",
+        title: "Perdas",
         isMoney: false,
         link: "ver todos os Pedidos",
         icon: <ShoppingBagOutlined className="icon" />,
@@ -62,7 +62,7 @@ const Widget = ({ type }) => {
         <span className="link">{data.link}</span>
       </div>
       <div className="right">
-        <div className="percentage negative">
+        <div className="percentage positive">
           <ArrowCircleUp />
           {diff} %
         </div>

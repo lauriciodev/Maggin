@@ -1,0 +1,201 @@
+.App.dark {
+  background-color: rgb(22, 16, 24);
+  color: rgb(126, 126, 126);
+
+  .chartGrid {
+    stroke: rgba(97, 93, 93, 0.245);
+  }
+
+  .table {
+    background-color: rgba(28, 26, 28, 0.595);
+
+    .tableCell {
+      color: rgb(112, 109, 109);
+    }
+  }
+
+  .navbar {
+    color: rgba(219, 166, 233, 0.677);
+    border-color: rgb(53, 55, 55);
+
+    .search {
+      border-color: rgb(53, 55, 55);
+      input {
+        color: rgb(215, 225, 225);
+      }
+    }
+  }
+
+  .sidebar {
+    background-color: rgba(22, 16, 24, 0.533);
+
+    .top {
+      background-color: rgba(32, 18, 30, 0.499);
+
+      .logo {
+        color: rgb(255, 255, 255);
+      }
+    }
+
+    hr {
+      border: 0.5px solid rgba(105, 102, 102, 0.711);
+    }
+
+    .center {
+      ul {
+        .title {
+          color: rgb(179, 174, 174);
+        }
+        li {
+          &:hover {
+            background-color: rgba(11, 11, 11, 0.638);
+          }
+
+          .icon {
+            color: rgba(192, 15, 227, 0.813);
+          }
+
+          span {
+            color: rgb(104, 101, 101);
+          }
+        }
+      }
+    }
+  }
+
+  .widget {
+    .title {
+      font-weight: bold;
+      color: rgb(195, 189, 189);
+    }
+
+    .counter {
+      color: rgba(190, 185, 185, 0.814);
+    }
+
+    .link {
+      border-bottom: 1px solid rgba(203, 203, 203, 0.786);
+    }
+
+    .percentage {
+      &.positive {
+        color: green;
+      }
+      &.negative {
+        color: rgb(174, 0, 0);
+      }
+    }
+
+    .icon {
+      background-color: #69055d;
+      color: white;
+      border: 1px solid rgba(0, 0, 0, 0.307);
+    }
+  }
+
+  .new {
+    .top,
+    .bottom {
+      -webkit-box-shadow: 1px 1px 1px 1px rgba(173, 168, 168, 0.259);
+      box-shadow: 2px 2px 2px 1px rgba(167, 166, 166, 0.138);
+
+      h1 {
+        color: rgba(175, 169, 169, 0.591);
+      }
+
+      .left {
+        img {
+          border: 1px solid rgba(89, 0, 86, 0.692);
+        }
+      }
+      .right {
+        form {
+          .formInput {
+            label {
+              .icon {
+                color: grey;
+              }
+            }
+
+            input {
+              background-color: transparent;
+              border-bottom: 1px solid rgba(128, 128, 128, 0.426);
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dataTable {
+    .datatableTitle {
+      .link {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        width: 170px;
+        padding: 10px;
+        font-size: 18px;
+        background-color: rgb(66, 0, 73);
+        text-align: center;
+        border-radius: 10px;
+        margin: 10px 0;
+      }
+    }
+
+    .dataGrid {
+      color: white;
+      input {
+        border: 1px solid white;
+      }
+    }
+
+    .cellwidthImg {
+      display: flex;
+      align-items: center;
+
+      .cellImg {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 20px;
+        border: 1px solid white;
+      }
+    }
+    .cellWidthStatus {
+      padding: 5px;
+      border-radius: 5px;
+      &.ativo {
+        color: rgb(180, 182, 180);
+        background-color: rgba(0, 128, 0, 0.342);
+      }
+      &.inativo {
+        color: rgb(205, 205, 205);
+        background-color: rgba(128, 2, 0, 0.342);
+      }
+    }
+
+    .cellAction {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .viewButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: rgb(122, 58, 128);
+        border: 1px dotted rgba(221, 160, 227, 0.871);
+      }
+      .deleteButton {
+        padding: 2px 5px;
+        border-radius: 5px;
+        color: rgb(214, 86, 86);
+        border: 1px dotted rgba(200, 121, 121, 0.871);
+      }
+    }
+  }
+}
