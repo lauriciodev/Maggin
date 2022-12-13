@@ -23,8 +23,8 @@ const DataTable = () => {
       <DataGrid
         rows={userRows}
         columns={userColumns.concat(actionColumn)}
-        pageSize={5}
-        rowsPerPageOptions={[5]}
+        pageSize={7}
+        rowsPerPageOptions={[7]}
         checkboxSelection
       />
     </div>
