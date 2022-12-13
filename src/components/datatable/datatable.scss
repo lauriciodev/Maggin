@@ -2,6 +2,24 @@
   height: 540px;
   padding: 10px;
 
+  .datatableTitle {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    .link {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      width: 170px;
+      padding: 10px;
+      font-size: 18px;
+      background-color: rgb(66, 0, 73);
+      text-align: center;
+      border-radius: 10px;
+      margin: 10px 0;
+    }
+  }
+
   .cellwidthImg {
     display: flex;
     align-items: center;

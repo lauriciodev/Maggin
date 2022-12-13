@@ -13,12 +13,15 @@ import {
   Store,
   UpcomingSharp,
 } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <span className="logo">Maggin</span>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <span className="logo">Maggin</span>
+        </Link>
       </div>
       <hr />
       <div className="center">
@@ -29,14 +32,18 @@ const Sidebar = () => {
             <span>Dashboard</span>
           </li>
           <p className="title">LISTAS</p>
-          <li>
-            <Person className="icon" />
-            <span>Usuários</span>
-          </li>
-          <li>
-            <Store className="icon" />
-            <span>Produtos</span>
-          </li>
+          <Link to="/users" style={{ textDecoration: "none" }}>
+            <li>
+              <Person className="icon" />
+              <span>Usuários</span>
+            </li>
+          </Link>
+          <Link to="/products" style={{ textDecoration: "none" }}>
+            <li>
+              <Store className="icon" />
+              <span>Produtos</span>
+            </li>
+          </Link>
           <li>
             <UpcomingSharp className="icon" />
             <span>Pedidos</span>
