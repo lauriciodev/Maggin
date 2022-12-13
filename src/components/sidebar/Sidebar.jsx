@@ -31,7 +31,7 @@ const Sidebar = () => {
           <p className="title">LISTAS</p>
           <li>
             <Person className="icon" />
-            <span>Usuário</span>
+            <span>Usuários</span>
           </li>
           <li>
             <Store className="icon" />
